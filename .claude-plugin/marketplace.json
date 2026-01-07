@@ -1,0 +1,26 @@
+{
+  "name": "jorgemf-claude-code-plugin",
+  "owner": {
+    "name": "Jorge"
+  },
+  "plugins": [
+    {
+      "name": "code-toolkit",
+      "source": "./plugins/code-toolkit",
+      "description": "Developer toolkit with git workflow commands, PR review agents, and IDE/browser integrations",
+      "version": "1.0.0"
+    },
+    {
+      "name": "nanobanana",
+      "source": "./plugins/nanobanana",
+      "description": "AI image generation using Google Gemini API",
+      "version": "1.0.0"
+    },
+    {
+      "name": "ralph-wiggum",
+      "source": "./plugins/ralph-wiggum",
+      "description": "Autonomous task execution loop using the Ralph Wiggum technique",
+      "version": "1.0.0"
+    }
+  ]
+}
