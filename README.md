@@ -30,25 +30,29 @@ Autonomous task execution loop for Claude Code.
 
 ## Installation
 
-### Using `--plugin-dir` flag
+### From GitHub (recommended)
 
 ```bash
-# Load a single plugin
-claude --plugin-dir ./plugins/code-toolkit
-
-# Load multiple plugins
-claude --plugin-dir ./plugins/code-toolkit --plugin-dir ./plugins/nanobanana
-```
-
-### Installing from this repository
-
-```bash
-# Add as marketplace
-/plugin marketplace add path/to/this/repo
+# Add this repository as a marketplace
+/plugin marketplace add jorgemf/claude-code-plugin
 
 # Install individual plugins
-/plugin install code-toolkit@my-marketplace
-/plugin install nanobanana@my-marketplace
+/plugin install code-toolkit@jorgemf/claude-code-plugin
+/plugin install nanobanana@jorgemf/claude-code-plugin
+/plugin install ralph-wiggum@jorgemf/claude-code-plugin
+```
+
+### Using `--plugin-dir` flag (for development)
+
+```bash
+# Clone the repository
+git clone https://github.com/jorgemf/claude-code-plugin.git
+
+# Load a single plugin
+claude --plugin-dir ./claude-code-plugin/plugins/code-toolkit
+
+# Load multiple plugins
+claude --plugin-dir ./claude-code-plugin/plugins/code-toolkit --plugin-dir ./claude-code-plugin/plugins/nanobanana
 ```
 
 ## Requirements
