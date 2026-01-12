@@ -8,7 +8,7 @@
       "name": "code-toolkit",
       "source": "./plugins/code-toolkit",
       "description": "Developer toolkit with git workflow commands, PR review agents, and IDE/browser integrations",
-      "version": "1.0.1"
+      "version": "1.0.2"
     },
     {
       "name": "nanobanana",

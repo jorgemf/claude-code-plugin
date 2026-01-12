@@ -91,24 +91,24 @@ Run a comprehensive pull request review using multiple specialized agents, each 
 
 **Full review (default):**
 ```
-/pr-review-toolkit:review-pr
+/code-toolkit:pr-review
 ```
 
 **Specific aspects:**
 ```
-/pr-review-toolkit:review-pr tests errors
+/code-toolkit:pr-review tests errors
 # Reviews only test coverage and error handling
 
-/pr-review-toolkit:review-pr comments
+/code-toolkit:pr-review comments
 # Reviews only code comments
 
-/pr-review-toolkit:review-pr simplify
+/code-toolkit:pr-review simplify
 # Simplifies code after passing review
 ```
 
 **Parallel review:**
 ```
-/pr-review-toolkit:review-pr all parallel
+/code-toolkit:pr-review all parallel
 # Launches all agents in parallel
 ```
 
@@ -158,7 +158,7 @@ Run a comprehensive pull request review using multiple specialized agents, each 
 **Before committing:**
 ```
 1. Write code
-2. Run: /pr-review-toolkit:review-pr code errors
+2. Run: /code-toolkit:pr-review code errors
 3. Fix any critical issues
 4. Commit
 ```
@@ -166,7 +166,7 @@ Run a comprehensive pull request review using multiple specialized agents, each 
 **Before creating PR:**
 ```
 1. Stage all changes
-2. Run: /pr-review-toolkit:review-pr all
+2. Run: /code-toolkit:pr-review all
 3. Address all critical and important issues
 4. Run specific reviews again to verify
 5. Create PR
@@ -178,6 +178,24 @@ Run a comprehensive pull request review using multiple specialized agents, each 
 2. Run targeted reviews based on feedback
 3. Verify issues are resolved
 4. Push updates
+```
+
+## Publishing to GitHub
+
+After reviewing the results locally, you can publish findings to GitHub:
+
+```
+/code-toolkit:pr-review-publish
+```
+
+This will:
+- Analyze the PR and identify issues with clear fixes
+- Post inline comments with suggestion blocks
+- Allow the PR author to accept fixes with one click
+
+Use `--dry-run` to preview comments before posting:
+```
+/code-toolkit:pr-review-publish --dry-run
 ```
 
 ## Notes:
