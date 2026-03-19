@@ -1,6 +1,6 @@
 {
   "name": "code-toolkit",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Developer toolkit with git workflow commands, PR review agents, and IDE/browser integrations via MCP servers",
   "author": {
     "name": "Jorge"

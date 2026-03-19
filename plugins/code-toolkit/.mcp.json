@@ -1,18 +1,7 @@
 {
   "mcpServers": {
     "jetbrains": {
-      "command": "npx",
-      "args": [
-        "@jorgemf/mcp-filter-tools@latest",
-        "--transport", "sse",
-        "--http-url", "http://localhost:64342/sse",
-        "--allow-tool", "get_file_problems",
-        "--allow-tool", "get_symbol_info",
-        "--allow-tool", "get_run_configurations",
-        "--allow-tool", "execute_terminal_command",
-        "--allow-tool", "execute_run_configuration",
-        "--allow-tool", "rename_refactoring"
-      ]
+      "url": "http://localhost:64342/sse"
     }
   }
 }
